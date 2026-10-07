@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", serif;
+  --font-sans: "Lora", serif;
+
+  --color-brand-maroon: #800000;
+  --color-brand-gold: #C5A021;
+  --color-brand-cream: #FAF9F6;
+  --color-brand-green: #1B4D3E;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-stone-900 antialiased font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.mandala-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l3 3-3 3-3-3 3-3zm15 3.5l2.12 2.12L45 7.74l-2.12-2.12L45 3.5zM56.5 15l2.12 2.12-2.12 2.12-2.12-2.12L56.5 15zM60 30l-3 3-3-3 3-3 3 3zm-3.5 15l-2.12 2.12-2.12-2.12 2.12-2.12L56.5 45zM45 56.5l-2.12 2.12-2.12-2.12 2.12-2.12L45 56.5zM30 60l-3-3 3-3 3 3-3 3zm-15-3.5l-2.12-2.12 2.12-2.12 2.12 2.12L15 56.5zM3.5 45l-2.12-2.12 2.12-2.12 2.12 2.12L3.5 45zM0 30l3-3 3 3-3 3-3-3zm3.5-15l2.12-2.12 2.12 2.12-2.12 2.12L3.5 15zM15 3.5l2.12 2.12-2.12 2.12-2.12-2.12L15 3.5z' fill='%23C5A021' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
